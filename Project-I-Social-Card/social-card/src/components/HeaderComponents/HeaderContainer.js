@@ -1,7 +1,10 @@
 import React from "react";
+// import moment from "moment";
 import "./Header.css";
 import HeaderContent from "./HeaderContent";
 import ImageThumbnail from "./ImageThumbnail";
+var moment = require("moment");
+const now = moment().format("D MMM");
 const data = {
   thumbnail: {
     src:
@@ -11,7 +14,7 @@ const data = {
   headerContent: {
     title: "Lambda School",
     handle: "@LambdaSchool",
-    date: "26 Jan",
+    date: now,
     description: `Let's learn React by building simple interfaces with components. Don't try
     to overthink it, just keep it simple and have fun. Once you feel
     comfortable using components you are well on your way to mastering React!`
