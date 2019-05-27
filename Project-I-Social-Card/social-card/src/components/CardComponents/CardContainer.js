@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Card.css";
 import CardContent from "./CardContent";
 const data = {
@@ -14,7 +14,7 @@ const data = {
   }
 };
 
-class CardContainer {
+class CardContainer extends Component {
   handleClick = () => {
     window.location.href = "https://reactjs.org";
   };
