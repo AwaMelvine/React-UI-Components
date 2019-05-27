@@ -11,4 +11,9 @@
 .footer-wrapper i {
   margin-right: 2.5rem;
   color: #5e5e5e;
+  cursor: pointer;
+}
+
+.footer-wrapper i:hover {
+  color: lightblue
 }
