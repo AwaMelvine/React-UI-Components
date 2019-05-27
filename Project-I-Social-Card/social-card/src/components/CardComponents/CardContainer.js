@@ -3,8 +3,9 @@ import "./Card.css";
 import CardContent from "./CardContent";
 
 const CardContainer = () => (
-  <div>
+  <div className="card-container">
     <CardContent />
+    
   </div>
 );
 

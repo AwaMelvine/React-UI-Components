@@ -5,8 +5,10 @@ import CardSummary from "./CardSummary";
 
 const CardContent = () => (
   <div className="card-content">
-    <CardBanner />
-    <CardSummary />
+    <div className="banner-wrapper">
+      <CardBanner />
+      <CardSummary />
+    </div>
   </div>
 );
 
