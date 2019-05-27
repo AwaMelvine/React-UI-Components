@@ -32,3 +32,11 @@
   display: block;
   margin-top: 0.4rem;
 }
+.message {
+  padding: 0.5rem;
+  border: 1px solid #016901;
+  color: #016901;
+  background: #9afc9a;
+  border-radius: 0.3rem;
+  text-align: center;
+}
