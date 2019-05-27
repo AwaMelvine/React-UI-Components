@@ -14,17 +14,24 @@ const data = {
   }
 };
 
-const CardContainer = () => (
-  <div className="card-container">
-    <CardContent
-      cardSrc={data.src}
-      cardAlt={data.alt}
-      title={data.summary.title}
-      summary={data.summary.summaryText}
-      link={data.summary.link}
-      linkText={data.summary.linkText}
-    />
-  </div>
-);
+class CardContainer {
+  handleClick = () => {
+    window.location.href = "https://reactjs.org";
+  };
+  render() {
+    return (
+      <div className="card-container" onClick={() => this.handleClick()}>
+        <CardContent
+          cardSrc={data.src}
+          cardAlt={data.alt}
+          title={data.summary.title}
+          summary={data.summary.summaryText}
+          link={data.summary.link}
+          linkText={data.summary.linkText}
+        />
+      </div>
+    );
+  }
+}
 
 export default CardContainer;
