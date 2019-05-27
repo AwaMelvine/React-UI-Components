@@ -1,0 +1,14 @@
+.footer {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.footer-wrapper {
+  width: 90%;
+  margin-left: 10%;
+  padding: 0.9rem 0rem;
+}
+
+.footer-wrapper i {
+  margin-right: 2.5rem;
+  color: #5e5e5e;
+}

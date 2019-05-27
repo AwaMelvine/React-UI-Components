@@ -5,7 +5,7 @@ const CardSummary = ({ title, summary, link, linkText }) => (
   <div className="card-summary">
     <h3>{title}</h3>
     <p>{summary}</p>
-    <a href={link}>{linkText}reactjs.org</a>
+    <a href={link}>{linkText}</a>
   </div>
 );
 
