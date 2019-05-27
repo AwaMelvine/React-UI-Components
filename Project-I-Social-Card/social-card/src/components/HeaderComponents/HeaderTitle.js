@@ -1,12 +1,12 @@
 import React from "react";
 import "./Header.css";
 
-const HeaderTitle = () => (
+const HeaderTitle = ({ title, handle, date }) => (
   <div className="header-title">
-    <h3>Lambda School</h3>
-    <span>@LambdaSchool</span>
+    <h3>{title}</h3>
+    <span>{handle}</span>
     <span>.</span>
-    <span>26 Jan</span>
+    <span>{date}</span>
   </div>
 );
 
