@@ -11,7 +11,7 @@ const NumberButtonsContainer = () => (
   <div className="number-buttons-container">
     <ActionButton label={data.zero} />
     {data.numbers.map(number => (
-      <NumberButton label={number} />
+      <NumberButton key={number} label={number} />
     ))}
     <ActionButton label={data.zero} />
   </div>
