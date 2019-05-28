@@ -3,7 +3,7 @@ import "./ButtonContainers.css";
 import ActionButton from "./../ButtonComponents/ActionButton";
 import NumberButton from "../ButtonComponents/NumberButton";
 const data = {
-  numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  numbers: [7, 8, 9, 4, 5, 6, 1, 2, 3],
   zero: 0,
   clear: "clear"
 };
