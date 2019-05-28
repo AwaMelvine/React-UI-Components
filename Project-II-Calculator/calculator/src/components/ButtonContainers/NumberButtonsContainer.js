@@ -7,13 +7,21 @@ const data = {
   zero: 0,
   clear: "clear"
 };
-const NumberButtonsContainer = () => (
+const NumberButtonsContainer = ({ handleClick }) => (
   <div className="number-buttons-container">
-    <ActionButton customClassName="clear" label={data.clear} />
+    <ActionButton
+      customClassName="clear"
+      label={data.clear}
+      handleClick={handleClick}
+    />
     {data.numbers.map(number => (
-      <NumberButton key={number} label={number} />
+      <NumberButton key={number} label={number} handleClick={handleClick} />
     ))}
-    <ActionButton customClassName="zero" label={data.zero} />
+    <ActionButton
+      customClassName="zero"
+      label={data.zero}
+      handleClick={handleClick}
+    />
   </div>
 );
 
