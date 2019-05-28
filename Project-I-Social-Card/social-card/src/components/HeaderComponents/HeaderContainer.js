@@ -3,6 +3,7 @@ import React from "react";
 import "./Header.css";
 import HeaderContent from "./HeaderContent";
 import ImageThumbnail from "./ImageThumbnail";
+// import moment from "moment";
 var moment = require("moment");
 const now = moment().format("D MMM");
 const data = {
