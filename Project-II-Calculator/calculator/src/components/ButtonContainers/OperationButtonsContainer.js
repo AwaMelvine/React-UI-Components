@@ -1,13 +1,13 @@
 import React from "react";
 import "./ButtonContainers.css";
-import NumberButton from "../ButtonComponents/NumberButton";
+import OperationButton from "../ButtonComponents/OperationButton";
 const operations = ["÷", "x", "-", "+", "="];
 
 const OperationButtonsContainer = () => {
   return (
     <div className="operation-buttons-container">
       {operations.map(op => (
-        <NumberButton label={op} />
+        <OperationButton label={op} />
       ))}
     </div>
   );
