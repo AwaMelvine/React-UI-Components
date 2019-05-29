@@ -1,23 +1,34 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import CalculatorDispplay from "./components/DisplayComponents/CalculatorDisplay";
+import ButtonContainers from "./components/ButtonContainers/ButtonsContainer";
 
-const App = () => {
-  return (
-    <div>
-      <h3>Welcome to React Calculator</h3>
-      <p>
-        We have given you a starter project. You'll want to build out your
-        components in their respective files, remove this code and replace it
-        with the proper components.
-      </p>
-      <p>
-        <strong>
-          Don't forget to `default export` your components and import them here
-          inside of this file in order to make them work.
-        </strong>
-      </p>
-    </div>
-  );
-};
-
-export default App;
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: 0
+    };
+  }
+  handleClick = value => {
+    const { total } = this.state;
+    if (value === "clear") {
+      this.setState({ ...this.state, total: 0 });
+    } else {
+      if (total === 0 && total.toString().length === 1) {
+        this.setState({ ...this.state, total: value });
+      } else {
+        this.setState({ ...this.state, total: `${total}${value}` });
+      }
+    }
+  };
+  render() {
+    const { total } = this.state;
+    return (
+      <div className="app">
+        <CalculatorDispplay total={total} />
+        <ButtonContainers handleClick={this.handleClick} />
+      </div>
+    );
+  }
+}

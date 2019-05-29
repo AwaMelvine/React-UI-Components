@@ -1,0 +1,37 @@
+.buttons-container {
+  display: flex;
+  width: 100%;
+}
+.number-buttons-container {
+  max-width: 375px;
+}
+.operation-buttons-container {
+  max-width: 100px;
+}
+
+button {
+  border: none;
+  font-size: 3rem;
+  border-top: 1px solid #979797;
+  border-right: 1px solid #979797;
+  outline: none;
+}
+
+.number-button {
+  width: 33.3%;
+  height: 98.5px;
+  flex-wrap: wrap;
+  background: white;
+}
+.operation-button {
+  width: 100px;
+  height: 98.5px;
+  background: #a0001e;
+  color: white;
+}
+.clear,
+.zero {
+  width: 100%;
+  height: 98.5px;
+  background: white;
+}

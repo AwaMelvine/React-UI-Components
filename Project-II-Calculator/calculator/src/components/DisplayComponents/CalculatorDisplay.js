@@ -1,9 +1,9 @@
 import React from "react";
 import "./Display.css";
 
-const CalculatorDispplay = ({ value = 0 }) => (
+const CalculatorDispplay = ({ total }) => (
   <div className="calculator-display">
-    <input name="displayValue" value={value} />
+    <p>{total}</p>
   </div>
 );
 
